@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <input>
+
+        <div id="orderForm">
+            <h2>Order Here</h2>
+            
+            <div class="input-group">
+                <label><b>Name:</b></label>
+                <input placeholder="Enter full name">
+            </div>
+
+            <div class="input-group">
+                <label><b>Money (₱):</b></label>
+                <input type="number" placeholder="0.00">
+            </div>
+
+            <div class="input-group">
+                <label><b>Quantity:</b></label>
+                <input type="number" value="1" min="1">
+            </div>
+
+            <p>Price: <b>₱150.00 each</b></p>
+
+            
+            <label for="toggleReceipt" class="generate-btn">
+                GENERATE RECEIPT
+            </label>
+
+            <a href="index.html" class="back-btn">BACK</a>
+        </div>
+        
+        <div id="receiptArea">
+            <h3>OFFICIAL RECEIPT</h3>
+            <hr>
+            <div class="receipt-content">
+                <p><b>Status:</b> Order Confirmed</p>
+                <p><b>Payment:</b> Cash on Delivery</p>
+                <p><b>Location:</b> Artisan Cafe Main</p>
+                <hr>
+                <p style="text-align: center;">Thank you for your purchase!</p>
+            </div>
+            <a href="receipt.html" class="new-order-btn">NEW ORDER</a>
+        </div>
+    </div>
+
+</body>
+</html>
